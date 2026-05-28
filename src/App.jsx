@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const profile = {
   name: "Chandan Kumar Sah",
   role: "AI/ML STUDENT | COMPUTER VISION | Deep Learning",
@@ -8,7 +10,7 @@ const profile = {
   github: "https://github.com/Chandan24-cell",
   linkedin: "https://www.linkedin.com/in/chandan-kumar-sah-40156a360",
   location: "India",
-  photo: "/profile.jpg",
+  photo: `${BASE_URL}profile.jpg`,
   heroTitle: "Building Practical AI Systems",
   heroSubtitle:
     "I am an Artificial Intelligence and Machine Learning student focused on building practical projects in machine learning, computer vision, healthcare AI, cybersecurity, and intelligent automation. I enjoy turning ideas into working systems through clean code, experimentation, and continuous learning.",
